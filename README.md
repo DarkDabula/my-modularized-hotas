@@ -9,7 +9,7 @@ I had already a joystick so I built a throttle lever made of metal parts, wood a
 ![Prototype](./images/prototype.jpg)
 
 But after hundreds of hours I recognized that the simple push buttons got weak and that I would need more buttons for effective playing in VR.
-In 2021 I bought a §D printer and the idea was born to contruct a new and better throttle lever and maybe after this a new joystick.
+In 2021 I bought a 3D printer and the idea was born to contruct a new and better throttle lever and maybe after this a new joystick.
 
 ## Goals
 - As much 3D printed parts as possible or reasonable
