@@ -6,6 +6,8 @@ On Christmas 2020 I stumbled over [Elite Dangerous](https://www.elitedangerous.c
 At this point I realized I would need a HOTAS system. The problem was that through the pademic all systems were mostly sold out. 
 I had already a joystick so I built a throttle lever made of metal parts, wood and some electronics. And it served me pretty well.
 
+![Prototype](./images/prototype.jpg)
+
 But after hundreds of hours I recognized that the simple push buttons got weak and that I would need more buttons for effective playing in VR.
 In 2021 I bought a §D printer and the idea was born to contruct a new and better throttle lever and maybe after this a new joystick.
 
