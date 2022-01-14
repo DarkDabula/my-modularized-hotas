@@ -13,15 +13,19 @@ In 2021 I bought a 3D printer and the idea was born to contruct a new and better
 
 ## Goals
 - As much 3D printed parts as possible or reasonable
-- Modularized design for better printing, assembly and customization
+- Modularized design for easy printing, assembly and customization
+
+## Current state
+See [here](./status.md)
+
+## Concepts
+See [here](./concepts.md)
 
 ## Toolchain
 - [FreeCAD](https://www.freecad.org/) 0.19
 - [Cura](https://ultimaker.com/software/ultimaker-cura) 4.12.1
 - [Creality Ender 6](https://www.creality.com/goods-detail/ender-6-3d-printer) (modified)
-
-## Current state
-See [here](./status.md)
+- [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## License
 This projects is licensed under the terms of [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
