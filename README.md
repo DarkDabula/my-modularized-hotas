@@ -1,4 +1,4 @@
-# my-modularized-hotas
+# My Modularized HOTAS
 A modularized, mostly 3D printed HOTAS with HID emulation via Arduino
 
 ## Motivation
