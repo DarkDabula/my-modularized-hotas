@@ -12,8 +12,8 @@ But after hundreds of hours I recognized that the simple push buttons got weak a
 In 2021 I bought a 3D printer and the idea was born to contruct a new and better throttle lever and maybe after this a new joystick.
 
 ## Goals
-- As much 3D printed parts as possible or reasonable
-- Modularized design for easy printing, assembly and customization
+- As much 3D printed parts as possible and reasonable
+- Modularized design for easy printing, assembly, customization and repair
 
 ## Current state
 See [here](./status.md)
