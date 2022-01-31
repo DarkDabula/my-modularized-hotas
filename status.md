@@ -2,8 +2,7 @@
 This file will be a kind of diary for the projects, to document the progress
 
 ## 31. Jan 2022
-I created the first test pieces for the adjustable joint. With that it should possible to adjust the angle of the lever in relation to the horizontal line.
-This was my third try after evaluating other designs.
+I created the first test pieces for the adjustable joint. With that it should possible to adjust the angle of the lever in relation to the horizontal line. This was my third try after evaluating other designs.
 ![Joint prototype](./images/joint-prototype.jpg)
 
 ## 20. Jan 2022
