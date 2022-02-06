@@ -2,7 +2,7 @@
 This file will be a kind of diary for the projects, to document the progress
 
 ## 06. Feb 2022
-Replaced the metal base plate by a thin printed prototype to check if the holes where at the richt position. On the base plate there will a joint to connect it with the leverl.
+Replaced the original metal base plate by a thin printed prototype to check if the holes where at the right position. On the base plate there will a joint to connect it with the leverl.
 
 ![Base plate prototype](./images/baseplate-prototype.jpg)
 
