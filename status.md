@@ -1,6 +1,10 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 06. Feb 2022
+Replaced the metal base plate by a thin printed prototype to check if the holes where at the richt position. On the base plate there will a joint to connect it with the leverl.
+![Base plate prototype](./images/baseplate-prototype.jpg)
+
 ## 31. Jan 2022
 I created the first test pieces for the adjustable joint. With that it should possible to adjust the angle of the lever in relation to the horizontal line.
 This was my third try after evaluating other designs.
