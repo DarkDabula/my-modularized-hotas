@@ -1,6 +1,11 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 07. Feb 2022
+Printed the first version of the base plate with joint. We will see if the joint is strong and stiff enough.
+
+![Base plate](./images/baseplate.jpg)
+
 ## 06. Feb 2022
 Replaced the original metal base plate by a thin printed prototype to check if the holes where at the right position. On the base plate there will a joint to connect it with the leverl.
 
