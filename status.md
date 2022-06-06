@@ -5,7 +5,7 @@ This file will be a kind of diary for the projects, to document the progress
 I redesigned the base plate to reduce need of filament. Additionally I replaced the original lock-in position by a kind of gear to allow finer angles of adjustment around the vertical axe.
 I also do a test print ob the counterpart for it.
 
-![2nd prototype of base plate](.images/20220606_baseplate_2nd_prototype.jpg)  
+![2nd prototype of base plate](./images/20220606_baseplate_2nd_prototype.jpg)  
 
 ## 07. Feb 2022
 Printed the first version of the base plate with joint. We will see if the joint is strong and stiff enough.
