@@ -1,6 +1,12 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 07. Aug 2022
+I did a second prototype for a part of the joint that will connect lever and baseplate. With the screw the joint can be fixed in its position. The print wan't 100% accurate but luckily it was at a non-critival point.
+
+![2nd prototype basejoint](./images/20220807_basejoint.jpg)
+![2nd prototype basejoint on baseplate](./images/20220807_basejoint2.jpg)
+
 ## 06. Jun 2022
 I redesigned the base plate to reduce need of filament. Additionally I replaced the original lock-in position by a kind of gear to allow finer angles of adjustment around the vertical axe.
 I also do a test print ob the counterpart for it.
