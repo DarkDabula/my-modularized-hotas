@@ -23,7 +23,7 @@ See [here](./concepts.md)
 
 ## Toolchain
 - [FreeCAD](https://www.freecad.org/) 0.19
-- [Cura](https://ultimaker.com/software/ultimaker-cura) 4.12.1
+- [Cura](https://ultimaker.com/software/ultimaker-cura) 4.12.1 (or above)
 - [Creality Ender 6](https://www.creality.com/goods-detail/ender-6-3d-printer) (modified)
 - [Arduino IDE](https://www.arduino.cc/en/software)
 
