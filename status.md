@@ -1,6 +1,23 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 11. Aug 2022
+I designed and printed additional parts for test reasons.
+
+![New parts](./images/20220811_New_parts.jpg)
+
+The consists of:
+- Two stoppers to set horizontal angle
+- Connector and connection plate to connect the lever with the joint with possible rotation around a additional axe
+- Partial printed lever hull, which constists of two parts but I put them too close while printing this time
+- Stopper to adjust rotation angle of the lever around its inner axe, not completely assembled
+
+The result is promising but I also identified some weak points.
+
+![New parts assemlbed](./images/20220811_Parts_assembled.jpg)
+
+There is also room for some optimizations like the ammount of needed material.
+
 ## 07. Aug 2022
 I did a second prototype for a part of the joint that will connect lever and baseplate. With the screw the joint can be fixed in its position. The print wan't 100% accurate but luckily it was at a non-critival point.
 
