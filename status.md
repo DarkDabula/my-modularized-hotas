@@ -1,6 +1,15 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 20. Aug 2022
+I designes the right part of the lever where many of the cottuns an the HAT will be located. The print went pretty well.
+
+![Left part of the lever](./images/20220820_right_part.png)
+
+I am also struggeling designing the button modules. The problem is that the swithes I wanted to use arent pretty compact. So I ordered some others at EBAY hoping that they are as reliable as the old ones.
+
+![Switches](./images/20220820_swithes.png)
+
 ## 11. Aug 2022
 I designed and printed additional parts for test reasons.
 

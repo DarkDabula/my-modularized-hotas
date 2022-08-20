@@ -21,6 +21,13 @@ See [here](./status.md)
 ## Concepts
 See [here](./concepts.md)
 
+## External parts
+For this project additional parts/components are needed besides the 3D printed ones.
+
+| Item        | Picture                             | Example link for buying                                                                                                   |
+|-------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Push button |                                     | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+button+7mm+non+latching&_sacat=0) |
+
 ## Toolchain
 - [FreeCAD](https://www.freecad.org/) 0.19
 - [Cura](https://ultimaker.com/software/ultimaker-cura) 4.12.1 (or above)
