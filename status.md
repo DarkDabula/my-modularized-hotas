@@ -8,7 +8,7 @@ I designes the right part of the lever where many of the cottuns an the HAT will
 
 I am also struggeling designing the button modules. The problem is that the swithes I wanted to use arent pretty compact. So I ordered some others at EBAY hoping that they are as reliable as the old ones.
 
-![Switches](./images/20220820_swithes.png)
+![Switches](./images/20220820_switches.png)
 
 ## 11. Aug 2022
 I designed and printed additional parts for test reasons.
