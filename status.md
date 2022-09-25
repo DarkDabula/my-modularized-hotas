@@ -1,6 +1,16 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 25. Sep 2022
+I am designing the right main button panel of the thrust lever at the moment. I plan to put there 6 buttons and a HAT.
+The HAT module gave me a pretty hard time. First I wanted to use the new bkue button but I didn't get the mechanics to work.
+So I went back to the first micro switches and with that I got a promising prototype.
+
+![Right panel parts prototypes](./images/20220925_panel_part_prototype.jpg)
+
+The next step will be to integrate the HAT module into the panel contruction.
+
+
 ## 20. Aug 2022
 I designes the right part of the lever where many of the cottuns an the HAT will be located. The print went pretty well.
 
