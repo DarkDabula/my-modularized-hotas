@@ -12,7 +12,7 @@ The next step will be to integrate the HAT module into the panel contruction.
 
 
 ## 20. Aug 2022
-I designes the right part of the lever where many of the cottuns an the HAT will be located. The print went pretty well.
+I designes the right part of the lever where many of the buttons and the HAT will be located. The print went pretty well.
 
 ![Left part of the lever](./images/20220820_right_part.png)
 
