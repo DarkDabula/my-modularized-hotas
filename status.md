@@ -1,6 +1,13 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 26. Sep 2022
+At the moment to play Elite Dangerous again, so I am pretty motivated to push this project foreward ;)
+Today I printed the (maybe final) panel for the buttons and the HAT module. I also printed a button cap prototype.
+A small problem will be wiring the HAT module because ther isn't much space.
+
+![Right panel and button cap prototype](./image/20220926_button_panel.jpg) 
+
 ## 25. Sep 2022
 I am designing the right main button panel of the thrust lever at the moment. I plan to put there 6 buttons and a HAT.
 The HAT module gave me a pretty hard time. First I wanted to use the new bkue button but I didn't get the mechanics to work.
