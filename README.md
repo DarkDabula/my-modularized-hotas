@@ -26,7 +26,8 @@ For this project additional parts/components are needed besides the 3D printed o
 
 | Item        | Picture                             | Example link for buying                                                                                                   |
 |-------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Push button |![Switch](./images/part_switch.png)  | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+button+7mm+non+latching&_sacat=0) |
+| Micro swith |![Micro switch](./images/part_microswitch.jpg) | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+limit+switch+125V+1A&_sacat=0) | 
+| Push button |![Push button](./images/part_switch.png)  | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+button+7mm+non+latching&_sacat=0) |
 
 ## Toolchain
 - [FreeCAD](https://www.freecad.org/) 0.19
