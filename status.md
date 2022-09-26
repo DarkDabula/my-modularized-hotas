@@ -2,7 +2,7 @@
 This file will be a kind of diary for the projects, to document the progress
 
 ## 26. Sep 2022
-At the moment to play Elite Dangerous again, so I am pretty motivated to push this project foreward ;)
+At the moment I am eager to play Elite Dangerous again, so I am pretty motivated to push this project foreward ;)
 Today I printed the (maybe final) panel for the buttons and the HAT module. I also printed a button cap prototype.
 A small problem will be wiring the HAT module because ther isn't much space.
 
