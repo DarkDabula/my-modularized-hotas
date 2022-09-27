@@ -1,6 +1,11 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 27. Sep 2022
+The right panel makes progress. I printed the cover plate an the double button caps. The next step will be printing the HAT and add the missing wires.
+
+![Right panel and button caps](./images/20220927_right_panel.jpg)
+
 ## 26. Sep 2022
 At the moment I am eager to play Elite Dangerous again, so I am pretty motivated to push this project foreward ;)
 Today I printed the (maybe final) panel for the buttons and the HAT module. I also printed a button cap prototype.
