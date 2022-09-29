@@ -1,6 +1,11 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 28. Sep 2022
+It took four attemps to print a perfect fitting HAT. I am pretty happy how it worked out finally. The next step will be to create an assembly description with the needed screws and other parts.
+
+![Richt panel with HAT](./images/20220928_HAT.jpg)
+
 ## 27. Sep 2022
 The right panel makes progress. I printed the cover plate an the double button caps. The next step will be printing the HAT and add the missing wires.
 
