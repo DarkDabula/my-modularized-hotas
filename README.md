@@ -24,10 +24,15 @@ See [here](./concepts.md)
 ## External parts
 For this project additional parts/components are needed besides the 3D printed ones.
 
-| Item        | Picture                             | Example link for buying                                                                                                   |
-|-------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Micro swith |![Micro switch](./images/part_microswitch.jpg) | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+limit+switch+125V+1A&_sacat=0) | 
-| Push button |![Push button](./images/part_switch.png)  | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+button+7mm+non+latching&_sacat=0) |
+| ID    | Item        | Picture                             | Example link for buying                                                                                                   |
+|-------|-------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| CON3  | Connector 3 pins | ![Connector 3 pins](./images/part_CON3.jpg) | |
+| CON5  | Connector 5 pins | ![Connector 5 pins](./images/part/CON5.jpg)| |
+| MS    | Micro swith |![Micro switch](./images/part_MS.jpg) | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+limit+switch+125V+1A&_sacat=0) | 
+| PB    | Push button |![Push button](./images/part_PB.png)  | [Link](https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=micro+button+7mm+non+latching&_sacat=0) |
+| SC25   | Screw 2,5x13 (metric)  | ![Screw 2,5x13](./images/part_SC25.jpg) | |
+| SC30   | Screw M3x20 (metric)   | ![Screw M3x20](./images/part_SC30.jpg) | |
+| SC35   | Screw 3,5x9,5 (metric) | ![Screw 3,5x9,6](./images/part_SC35.jpg) | |
 
 ## Toolchain
 - [FreeCAD](https://www.freecad.org/) 0.19
