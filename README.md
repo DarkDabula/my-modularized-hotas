@@ -33,7 +33,7 @@ For this project additional parts/components are needed besides the 3D printed o
 | SC25     |      4  | Screw 2,5x13 (metric)  | ![Screw 2,5x13](./images/part_SC25.jpg) | |
 | SCM3     |      1  | Screw M3x20 (metric)   | ![Screw M3x20](./images/part_SC30.jpg) | |
 | SC35_7   |      1  | Screw 3,5x7 (metric)   | ![Screw 3,5x7](./images/part_SC35_7.jpg) | |
-| SC35     |      4  | Screw 3,5x9,5 (metric) | ![Screw 3,5x9,6](./images/part_SC35.jpg) | |
+| SC35_95  |      4  | Screw 3,5x9,5 (metric) | ![Screw 3,5x9,6](./images/part_SC35.jpg) | |
 | SCM4_10  |      8  | Screw M4x10 (metric)   | ![Screw M4x10](./images/part_SC40_10.jpg) | |
 | SCM4_20  |      2  | Screw M4x20 (metric)   | ![Screw M4x20](./images/part_SC40_20.jpg) | |
 | SCN4     |      2  | Stop nut M4 (metric)   | ![Stop nut M4](./images/part_SN40.jpg) | |
