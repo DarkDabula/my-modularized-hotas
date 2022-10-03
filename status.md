@@ -1,10 +1,17 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 03. Okt 2022
+The right pannel is now fully assembled and wired. One major step is done.
+
+![Right panel assembled](./images/20221003_right_panel_assembled.jpg)
+
+Next phase to the final design for the lever corpus.
+
 ## 28. Sep 2022
 It took four attemps to print a perfect fitting HAT. I am pretty happy how it worked out finally. The next step will be to create an assembly description with the needed screws and other parts.
 
-![Richt panel with HAT](./images/20220928_HAT.jpg)
+![Right panel with HAT](./images/20220928_HAT.jpg)
 
 ## 27. Sep 2022
 The right panel makes progress. I printed the cover plate an the double button caps. The next step will be printing the HAT and add the missing wires.
