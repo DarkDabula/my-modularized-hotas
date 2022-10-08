@@ -1,7 +1,13 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
-## 03. Okt 2022
+## 08. Oct 2022
+I redesigned the rocker module to use the new push buttons and omitting the springs.
+
+![New rocker module in parts](./images/20221008_new_rocker_module_parts.jpg)
+![New rocker module assembled](./images/20221008_new_rocker_module.jpg)
+
+## 03. Oct 2022
 The right pannel is now fully assembled and wired. One major step is done.
 
 ![Right panel assembled](./images/20221003_right_panel_assembled.jpg)
