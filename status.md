@@ -1,6 +1,18 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 18. Oct 2022
+I finally printed the two parts of the lever hull. I printed them separately in two runs. At the first part I struggled to strip the support structure away. So at the second
+part I used tree support.
+
+![Lever hull parts](./images/20221017_lever_hull.jpg)
+
+There a still some little tasks ahead: 
+- reprint of the lever angle stopper -> seems to be too small
+- print the final version of the rocker
+- print the final version of the rocker module
+- designing and printing the front buttons of the lever
+
 ## 08. Oct 2022
 I redesigned the rocker module to use the new push buttons and omitting the springs.
 
