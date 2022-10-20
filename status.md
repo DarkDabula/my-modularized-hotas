@@ -1,6 +1,17 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 19. Oct 2022
+I reached a major milestone within this project. All basic parts of the lever are designed and printed. 
+
+![Lever front](./images/20221019_lever_1.jpg)
+![Lever back](./images/20221019_lever_2.jpg)
+![Lever opened](./images/20221019_lever_open.jpg)
+
+Not all is perfect but I think it will go through some iterations while using it, but for now I am happy wight the result.
+
+The next phase will be wiring alle the buttons, create connector boards and programming the controller. Challenging will be the limited space within the lever.
+
 ## 18. Oct 2022
 I finally printed the two parts of the lever hull. I printed them separately in two runs. At the first part I struggled to strip the support structure away. So at the second
 part I used tree support.
