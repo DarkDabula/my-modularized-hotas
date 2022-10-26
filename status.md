@@ -10,7 +10,7 @@ I designed the connector boards with KiCad. These boards will be connected to th
 I also created a physical version, but its not perfect. So I consider to call it prototype.
 
 ![Connector one board front](./images/20221025_CB1prot_front.jpg)
-![Connector one back front](./images/20221025_CB1prot_front.jpg)
+![Connector one back front](./images/20221025_CB1prot_back.jpg)
 
 Besides that I began to program the slave arduino. Results are promising so far.
 
