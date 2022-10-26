@@ -44,6 +44,7 @@ For this project additional parts/components are needed besides the 3D printed o
 - [Cura](https://ultimaker.com/software/ultimaker-cura) 4.12.1 (or above)
 - [Creality Ender 6](https://www.creality.com/goods-detail/ender-6-3d-printer) (modified)
 - [Arduino IDE](https://www.arduino.cc/en/software)
+- [KiCad](https://www.kicad.org/)
 
 ## License
 This projects is licensed under the terms of [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)

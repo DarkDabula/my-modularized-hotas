@@ -1,6 +1,19 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 26. Oct 2002
+I designed the connector boards with KiCad. These boards will be connected to the buttons and will translate them into analogue signals for the slave Arduino. Maybe this will not be the final design.
+
+![Connector boards front](./images/20221026_CBs_front.png)
+![Connector boards back](./images/20221026_CBs_back.png)
+
+I also created a physical version, but its not perfect. So I consider to call it prototype.
+
+![Connector one board front](./images/20221025_CB1_front.jpg)
+![Connector one back front](./images/20221025_CB1_front.jpg)
+
+Besides that I began to program the slave arduino. Results are promising so far.
+
 ## 19. Oct 2022
 I reached a major milestone within this project. All basic parts of the lever are designed and printed. 
 
