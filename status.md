@@ -1,6 +1,19 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 04. Nov 2022
+I designed a placeholder for the boards within the lever to get a feeling for the available space.
+
+![Board placeholder](./images/20221104_board_placeholder.png)
+
+Then I imported the shape into KiCad and puzzled to get all parts arranged within it.
+
+![Connector board front](./images/20221104_connector_board_front.png)
+![Connector board back](./images/20221104_connector_board_back.png)
+
+Now I wait for some part that I ordered to assemble the connector board.
+I also continued developing the Arduino sketch for the slave controller.
+
 ## 26. Oct 2002
 I designed the connector boards with KiCad. These boards will be connected to the buttons and will translate them into analogue signals for the slave Arduino. Maybe this will not be the final design.
 
