@@ -7,7 +7,7 @@ I finished the connector board
 ![Connector board front](./images/20221111_connector_board_front.jpg)
 ![Connector board back](./images/20221111_connector_board_back.jpg)
 
-But despite all digital planning I had to modifiy some parts because the Arduino collided with the 4-pin connector in the side
+But despite all digital planning I had to modifiy some parts because the Arduino collided with the 4-pin connector on the side
 
 ![Connector board modified](./images/20221111_connector_board_modified.jpg)
 
@@ -19,7 +19,7 @@ With that all fits together well
 
 ![Connector board assembled](./images/20221111_connector_board_assembled.jpg)
 
-I also testet the whole setup with both Arduino boards.
+I also tested the whole setup with both Arduino boards.
 
 ![Two Arduinos connected](./images/20221111_two_arduinos_connected.jpg)
 
@@ -39,7 +39,7 @@ Then I imported the shape into KiCad and puzzled to get all parts arranged withi
 ![Connector board front](./images/20221104_connector_board_front.png)
 ![Connector board back](./images/20221104_connector_board_back.png)
 
-Now I wait for some part that I ordered to assemble the connector board.
+Now I wait for some parts that I ordered to assemble the connector board.
 I also continued developing the Arduino sketch for the slave controller.
 
 ## 26. Oct 2002
