@@ -11,7 +11,7 @@ But despite all digital planning I had to modifiy some parts because the Arduino
 
 ![Connector board modified](./images/20221111_connector_board_modified.jpg)
 
-1. Removed the plastic space to lower the height
+1. Removed the plastic spacer to lower the height
 2. Cable connection instead pins
 3. Increased angle of connector
 
