@@ -1,6 +1,34 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 11. Nov 2022
+I finished the connector board
+
+![Connector board front](./images/20221111_connector_board_front.jpg)
+![Connector board back](./images/20221111_connector_board_back.jpg)
+
+But despite all digital planning I had to modifiy some parts because the Arduino collided with the 4-pin connector in the side
+
+![Connector board modified](./images/20221111_connector_board_modified.jpg)
+
+1. Removed the plastic space to lower the height
+2. Cable connection instead pins
+3. Increased angle of connector
+
+With that all fits together well
+
+![Connector board assembled](./images/20221111_connector_board_assembled.jpg)
+
+I also testet the whole setup with both Arduino boards.
+
+![Two Arduinos connected](./images/20221111_two_arduinos_connected.jpg)
+
+Next steps will be:
+
+* Finish programming
+* Assemble thrust lever
+* Create electric connections
+
 ## 04. Nov 2022
 I designed a placeholder for the boards within the lever to get a feeling for the available space.
 
