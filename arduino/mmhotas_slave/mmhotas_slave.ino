@@ -1,5 +1,5 @@
 /**
- * Script for the slave board of the My Modularized HOTAS project
+ * Sketch for the slave board of the My Modularized HOTAS project
  * 
  * https://github.com/DarkDabula/my-modularized-hotas
  * 
@@ -15,7 +15,7 @@
  */
 
 // Global debug flag, uncomment to enable serial port and outputs
-#define DEBUG 1
+//#define DEBUG 1
 
 // Pins
 #define pinSixButtons A0
@@ -26,8 +26,8 @@
 // Value tables to translate analog values into buttons
 int valuesSixButtons[] = {75, 120, 160, 215, 300, 465};
 int valuesHAT[] = {110, 145, 185, 255, 280, 435, 455, 340}; // N, NW, W, SW, S, SE, E, NE
-int valuesTwoButtons[] = {0, 0, 0}; // 1, 2, 1+2
-int valuesRocker[] = {0, 0}; // right, left
+int valuesTwoButtons[] = {200, 405, 335}; // 1, 2, 1+2
+int valuesRocker[] = {405, 195}; // right, left
 
 // Defines a range around the input value for comparison with the value tables
 #define valueValidDelta 9
@@ -70,7 +70,7 @@ int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const cha
 // Scheme will be:
 // Bits 0 to 3: SixButtons group
 // Bits 4 to 7: HAT
-// Bits 8 to 11: TwoBUttons group
+// Bits 8 to 11: TwoButtons group
 // Bits 12 to 15: Rocker
 int translateButtonValues(int valSixButtons, int valHAT, int valTwoButtons, int valRocker)
 {
@@ -91,7 +91,15 @@ void sendButtonStates()
     Serial.print("Sending button states to master: ");
     Serial.println(buttonStates);
   #endif  
-  Wire.write(buttonStates);
+
+  // LED on
+  TXLED1;
+  
+  // Maybe dirty but we handle the int as an array of bytes
+  Wire.write((const byte*)&buttonStates, sizeof(int));
+
+  // LED off
+  TXLED0;
 }
 
 /**
@@ -103,12 +111,12 @@ void setup()
   #ifdef DEBUG
     Serial.begin(9600);
   #endif
-  
+
   // Set up the input pins
-  pinMode(pinSixButtons, INPUT);
+  /*pinMode(pinSixButtons, INPUT);
   pinMode(pinHAT, INPUT);
   pinMode(pinTwoButtons, INPUT);
-  pinMode(pinRocker, INPUT);
+  pinMode(pinRocker, INPUT);*/
 
   // Set up I2C bus
   Wire.begin(0x11); // We are the slave
@@ -125,6 +133,9 @@ void loop()
   int valueHAT = 0;
   int valueTwoButtons = 0;
   int valueRocker = 0;
+
+  // LED on
+  RXLED1;
   
   // Read SixButtons
   valueSixButtons = evaluateInput(pinSixButtons, valuesSixButtons, sizeof(valuesSixButtons) / sizeof(int), "SixButtons");
@@ -140,6 +151,9 @@ void loop()
 
   // Translate states
   buttonStates = translateButtonValues(valueSixButtons, valueHAT, valueTwoButtons, valueRocker);
+
+  // LED off
+  RXLED0;
 
   // Sleep for a while
   #ifdef DEBUG
