@@ -1,6 +1,20 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 17. Nov 2022
+I fixed some issues which occurs while playing.
+
+1. Broken cable at one of the rocker switches
+2. Replaced one rocker switch which had more than 30 Ohm while pressed
+3. Fixed software bug in slave program which reports invalid values to master via I2C
+
+I also finished the front board with the connectors for cable, time-of-flight sensor and master Arduino
+
+![Front board top](./images/20221117_front_board_top.jpg)
+![Front board bottom](./images/20221117_front_board_bottom.jpg)
+
+Next step is to print a mount for the front board.
+
 ## 14. Nov 2022
 I wired and assembled the lever
 
