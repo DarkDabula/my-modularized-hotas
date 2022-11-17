@@ -154,7 +154,7 @@ int throttleCenterDelta = 0;
         Serial.print("2 ");
         break;
         
-      case 3:
+      case 3: 
         Joystick.pressButton(0);
         Joystick.pressButton(1);
         Serial.print("1+2 ");
@@ -162,7 +162,7 @@ int throttleCenterDelta = 0;
         
       default:
         Joystick.releaseButton(0);
-        Joystick.releaseButton(1);      
+        Joystick.releaseButton(1);
         break;  
       
     }
@@ -272,10 +272,18 @@ void loop()
     Serial.println("Waiting for slave ...");
   #endif
     delay(10);
+  }  
+  for(int i = 0; i < sizeof(int); i++)
+  {
+    bytesBuffer[i] = Wire.read();
+    #ifdef DEBUG
+      Serial.print("Receiving byte: ");
+      Serial.println(bytesBuffer[i]);
+    #endif
   }
-  for(int i = 0; i < sizeof(int); i++) bytesBuffer[i] = Wire.read();
   int buttonStates = *((int*)bytesBuffer);
-  if(buttonStates >= 0 && buttonStates < 10000) // Sometimes there are values lesser zero for what reason
+  if(true) // Not needed anymore
+  //if(buttonStates >= 0 && buttonStates < 10000) // Sometimes there are invalid values for what reason
   {
     #ifdef DEBUG
       Serial.print("Slave reports: ");
