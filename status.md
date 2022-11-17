@@ -1,6 +1,25 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 14. Nov 2022
+I wired and assembled the lever
+
+![Lever interior](./images/20221114_lever_interior.jpg)
+![Lever assemlbed](./images/20221114_lever_assembled.jpg)
+
+I also printed the last parts for the magnets which "mark" the zero position
+
+![Lever interior](./images/20221114_magnets.jpg)
+
+and the reflector for the time-of-flight sensor using a small piece of aluminium
+
+![Lever interior](./images/20221114_reflector.jpg)
+
+I finished the programming of the Arduinos. A strage thind is that sometimes the master gets values over I2C which the slave don't send. 
+But luckily I was able to comensate it via programming.
+
+Finally I finished my first session Elite Dangerous with the new lever and configured the key bindings.
+
 ## 11. Nov 2022
 I finished the connector board
 
