@@ -42,6 +42,7 @@ volatile int buttonStates = 0;
 int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const char* title)
 {
   int valueIO = analogRead(pinInput); 
+  int outputValue = 0;
   #ifdef DEBUG
     Serial.print(title);
     Serial.print(": ");
@@ -53,16 +54,16 @@ int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const cha
     {
       if(abs(valueIO - valuesArray[i]) <= valueValidDelta)
       {
-        valueIO = i+1;
+        outputValue = i+1;
         break;
       }
     }
   }
   #ifdef DEBUG
     Serial.print(" -> Translated: ");
-    Serial.println(valueIO);
+    Serial.println(outputValue);
   #endif
-  return valueIO; 
+  return outputValue; 
 }
 
 // Translates the different button values into one fot I2C transmission
