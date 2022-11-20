@@ -1,6 +1,20 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 20. Nov 2022
+I optimized the code of the master Arduino to improve the throttle control, now it works fine.
+
+I also redesigned the magnet mount for the metal base plate. Unluckily I broke some uncritical parts of it while inserting the magnet.
+The new mount hav a better adhesion to the plate.
+
+![New magnet plate mount](./images/20221120_new_magnet_mount.jpg)
+
+I printed a mount for the front board and attached it to the metal bease plate.
+
+![Front board and mount](./images/20221120_front_board_and_mount.jpg)
+
+Next step will be to create a case for the whole thing and finalize the cable management.
+
 ## 17. Nov 2022
 I fixed some issues which occurs while playing.
 
