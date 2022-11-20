@@ -35,23 +35,23 @@ Joystick_ Joystick = Joystick_(0x04, JOYSTICK_TYPE_JOYSTICK, 8, 1, false, false,
 VL53L0X lox = VL53L0X();
 
 // Main throttle table to translate distance values into throttle values
-// Format is maxDist, minDist, throttleVal
+// Format is minDist, throttleVal
 // throttleVal is defined as
 //    -100, 100 - min/max
 //    -1, 1     - linear range
 //    0         - center 
 //
-int throttleTable[5][3] =
+int throttleTable[6][2] = 
 {
-  {999, 230, -100},
-  {230, 162, -1},
-  {162, 152, 0},
-  {152, 45, 1}, 
-  {45, 0, 100}
+  {-999, 100},  // 100%
+  {5, 1},       // linear +
+  {105, 0},     // 0%
+  {115, -1},    // linear -
+  {190, -100}   // -100%
 };
 
-// Delta value from center
-int throttleCenterDelta = 0;
+// Zone around the center position considered as center in millimeters
+int throttleCenterZone = 7;
 
 /**
  * Helper functions
@@ -82,8 +82,9 @@ int throttleCenterDelta = 0;
       throttleCenter /= 2;
     }
 
-    // Calculate delta from center, we substract the center value based of the table from the actual value
-    throttleCenterDelta = throttleCenter - (((throttleTable[2][0] - throttleTable[2][1]) / 2) + throttleTable[2][1]);
+    // With the actual center value we change the center range in the throttle table
+    throttleTable[2][0] = throttleCenter - throttleCenterZone;
+    throttleTable[3][0] = throttleCenter + throttleCenterZone;
  }
 
  // Translate external states into Joystick state
@@ -98,39 +99,58 @@ int throttleCenterDelta = 0;
  void sendJoystickState(int tofPos, int buttonStates)
  {
     signed short val = 0;
-    int correctedPos = tofPos - throttleCenterDelta;
   
     // Translate throttle
     //
     signed short throttleValue = 0;
-    for(int i = 0; i < 5; i++)
-    {
-      // Search the interval
-      if(throttleTable[i][0] >= correctedPos && correctedPos >= throttleTable[i][1])
-      {
-        switch(throttleTable[i][2])
-        {
-          // linear range
-          case -1:
-            throttleValue = -100.0 * (correctedPos - throttleTable[i][1]) / (throttleTable[i][0] - throttleTable[i][1]); 
-            break;
-          
-          case 1:
-            throttleValue = 100.0 * (throttleTable[i][0] - correctedPos) / (throttleTable[i][0] - throttleTable[i][1]);
-            break;
-
-          // fixed values
-          default:
-            throttleValue = throttleTable[i][2];
-        }
-        break;
-      }
-    }
+    unsigned short throttleEntry = 0; 
+   
     #ifdef DEBUG
-      Serial.print("Throttle (value/centerDelta): ");
-      Serial.print(throttleValue);
-      Serial.print(" / ");
-      Serial.println(throttleCenterDelta);
+      Serial.println("Calculating throttle:");
+    #endif
+  
+    for(short i = 0; i < 5; i++)
+    {
+      // Find the last matching entry
+      if(tofPos >= throttleTable[i][0])
+      {
+        throttleValue = throttleTable[i][1];
+        throttleEntry = i; 
+      }
+      else break;
+    }
+
+    #ifdef DEBUG
+      Serial.print("- Found throttle table entry ");
+      Serial.print(throttleEntry);
+      Serial.print(" with value ");
+      Serial.println(throttleValue);        
+    #endif
+ 
+    // When within a linear interval, do some calculations
+    if(abs(throttleValue) == 1)
+    {
+      // This part is a bit tricky because we have to use the next table entry to calculate the linear value wthin the range
+      int intervalRange = abs(throttleTable[throttleEntry][0] - throttleTable[throttleEntry + 1][0]);  
+      #ifdef DEBUG
+        Serial.print("- Linear range is: ");
+        Serial.println(intervalRange);
+      #endif
+
+      // Here we calculate the distance from reference point debending on the direction
+      int distanceToReference = (throttleValue > 0) ? (throttleTable[throttleEntry + 1][0] - tofPos) : (tofPos - throttleTable[throttleEntry][0]);
+      #ifdef DEBUG
+        Serial.print("- Distance to reference is: ");
+        Serial.println(distanceToReference);
+      #endif
+
+      // With the range and distance we can do simple calculation of percent but we have to regard the sign
+      throttleValue = throttleValue * 100.0 * (distanceToReference) / intervalRange;
+    }
+
+    #ifdef DEBUG
+      Serial.print("Throttle: ");
+      Serial.println(throttleValue);
     #endif
     Joystick.setThrottle(throttleValue);
 
@@ -253,11 +273,16 @@ void loop()
   RXLED1;
   
   // Read and handle TOF
+  static int tofLastPos = 0;
   int tofPos = lox.readRangeSingleMillimeters();
   #ifdef DEBUG
     Serial.print("TOF reports: ");
     Serial.println(tofPos);
   #endif
+
+  // Smothing the value a little bit
+  tofPos = (tofPos + tofLastPos) / 2;
+  tofLastPos = tofPos;
 
   // LED off
   RXLED0;
