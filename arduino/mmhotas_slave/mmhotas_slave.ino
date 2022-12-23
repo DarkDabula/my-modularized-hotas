@@ -30,7 +30,7 @@ int valuesTwoButtons[] = {200, 405, 335}; // 1, 2, 1+2
 int valuesRocker[] = {405, 195}; // right, left
 
 // Defines a range around the input value for comparison with the value tables
-#define valueValidDelta 9
+//#define valueValidDelta 9
 
 volatile int buttonStates = 0;
 
@@ -39,7 +39,7 @@ volatile int buttonStates = 0;
  */
 
 // Function to translate analogue values into button states
-int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const char* title)
+int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const char* title, short valueValidDelta = 9)
 {
   int valueIO = analogRead(pinInput); 
   int outputValue = 0;
@@ -75,14 +75,20 @@ int evaluateInput(short pinInput, int valuesArray[], size_t arraySize, const cha
 // Bits 12 to 15: Rocker
 int translateButtonValues(int valSixButtons, int valHAT, int valTwoButtons, int valRocker)
 {
+  static int lastResult = 0; 
+  
+  // Translate values into byte package
   int result = 0;
-
   result |= (valSixButtons & 0xF);
   result |= (valHAT & 0xF) << 4;
   result |= (valTwoButtons & 0xF) << 8;
   result |= (valRocker & 0xF) << 12;
-  
-  return result;
+
+  // We combine value of last translateion with the actual one to supress wrong states
+  int returnVal = (result & lastResult);
+  lastResult = result;
+
+  return returnVal;
 }
 
 // EVent handler when the master requests the actual button states
@@ -145,10 +151,10 @@ void loop()
   valueHAT = evaluateInput(pinHAT, valuesHAT, sizeof(valuesHAT) / sizeof(int), "HAT");
 
   // Read TwoButtons
-  valueTwoButtons = evaluateInput(pinTwoButtons, valuesTwoButtons, sizeof(valuesTwoButtons) / sizeof(int), "TwoButtons");
+  valueTwoButtons = evaluateInput(pinTwoButtons, valuesTwoButtons, sizeof(valuesTwoButtons) / sizeof(int), "TwoButtons", 30);
 
   // Read rocker
-  valueRocker = evaluateInput(pinRocker, valuesRocker, sizeof(valuesRocker) / sizeof(int), "Rocker");
+  valueRocker = evaluateInput(pinRocker, valuesRocker, sizeof(valuesRocker) / sizeof(int), "Rocker", 30);
 
   // Translate states
   buttonStates = translateButtonValues(valueSixButtons, valueHAT, valueTwoButtons, valueRocker);
