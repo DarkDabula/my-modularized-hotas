@@ -1,15 +1,26 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 23. Dec 2022
+I printed a cable mount so there will be no mechanical force on the Arduino board anymore.
+
+![Cable mount](./images/20221223_cable_mount.jpg)
+
+I also located some weak points of the construction after several hours playing Elite Dangerous:
+
+- The lever joint seems not strong enough to hold the lever in the adjusted position when pushed to hard
+- Some of the push button are getting unreliable. Maybe they don't have the quality I thought. Maybe ne next time I will use real Cherry buttons when possible.
+- The circuit with the resistant maybe isn't the best option with the tolerance of the buttons, maybe the next stage will be using a I2C GPIO expander to get an input for every button. 
+
 ## 20. Nov 2022
 I optimized the code of the master Arduino to improve the throttle control, now it works fine.
 
 I also redesigned the magnet mount for the metal base plate. Unluckily I broke some uncritical parts of it while inserting the magnet.
-The new mount hav a better adhesion to the plate.
+The new mount have a better adhesion to the plate.
 
 ![New magnet plate mount](./images/20221120_new_magnet_mount.jpg)
 
-I printed a mount for the front board and attached it to the metal bease plate.
+I printed a mount for the front board and attached it to the metal base plate.
 
 ![Front board and mount](./images/20221120_front_board_and_mount.jpg)
 
@@ -39,12 +50,12 @@ I also printed the last parts for the magnets which "mark" the zero position
 
 ![Lever interior](./images/20221114_magnets.jpg)
 
-and the reflector for the time-of-flight sensor using a small piece of aluminium
+and the reflector for the time-of-flight sensor using a small piece of aluminum
 
 ![Lever interior](./images/20221114_reflector.jpg)
 
-I finished the programming of the Arduinos. A strage thind is that sometimes the master gets values over I2C which the slave don't send. 
-But luckily I was able to comensate it via programming.
+I finished the programming of the Arduinos. A strange thing is that sometimes the master gets values over I2C which the slave don't send. 
+But luckily I was able to compensate it via programming.
 
 Finally I finished my first session Elite Dangerous with the new lever and configured the key bindings.
 
@@ -54,7 +65,7 @@ I finished the connector board
 ![Connector board front](./images/20221111_connector_board_front.jpg)
 ![Connector board back](./images/20221111_connector_board_back.jpg)
 
-But despite all digital planning I had to modifiy some parts because the Arduino collided with the 4-pin connector on the side
+But despite all digital planning I had to modify some parts because the Arduino collided with the 4-pin connector on the side
 
 ![Connector board modified](./images/20221111_connector_board_modified.jpg)
 
@@ -100,7 +111,7 @@ I also created a physical version, but its not perfect. So I consider to call it
 ![Connector one board front](./images/20221025_CB1prot_front.jpg)
 ![Connector one back front](./images/20221025_CB1prot_back.jpg)
 
-Besides that I began to program the slave arduino. Results are promising so far.
+Besides that I began to program the slave Arduino. Results are promising so far.
 
 ## 19. Oct 2022
 I reached a major milestone within this project. All basic parts of the lever are designed and printed. 
@@ -111,7 +122,7 @@ I reached a major milestone within this project. All basic parts of the lever ar
 
 Not all is perfect but I think it will go through some iterations while using it, but for now I am happy wight the result.
 
-The next phase will be wiring alle the buttons, create connector boards and programming the controller. Challenging will be the limited space within the lever.
+The next phase will be wiring all the buttons, create connector boards and programming the controller. Challenging will be the limited space within the lever.
 
 ## 18. Oct 2022
 I finally printed the two parts of the lever hull. I printed them separately in two runs. At the first part I struggled to strip the support structure away. So at the second
@@ -132,14 +143,14 @@ I redesigned the rocker module to use the new push buttons and omitting the spri
 ![New rocker module assembled](./images/20221008_new_rocker_module.jpg)
 
 ## 03. Oct 2022
-The right pannel is now fully assembled and wired. One major step is done.
+The right panel is now fully assembled and wired. One major step is done.
 
 ![Right panel assembled](./images/20221003_right_panel_assembled.jpg)
 
 Next phase is the final design for the lever corpus.
 
 ## 28. Sep 2022
-It took four attemps to print a perfect fitting HAT. I am pretty happy how it worked out finally. The next step will be to create an assembly description with the needed screws and other parts.
+It took four attempts to print a perfect fitting HAT. I am pretty happy how it worked out finally. The next step will be to create an assembly description with the needed screws and other parts.
 
 ![Right panel with HAT](./images/20220928_HAT.jpg)
 
@@ -149,28 +160,28 @@ The right panel makes progress. I printed the cover plate an the double button c
 ![Right panel and button caps](./images/20220927_right_panel.jpg)
 
 ## 26. Sep 2022
-At the moment I am eager to play Elite Dangerous again, so I am pretty motivated to push this project foreward ;)
+At the moment I am eager to play Elite Dangerous again, so I am pretty motivated to push this project forward ;)
 Today I printed the (maybe final) panel for the buttons and the HAT module. I also printed a button cap prototype.
-A small problem will be wiring the HAT module because ther isn't much space.
+A small problem will be wiring the HAT module because there isn't much space.
 
 ![Right panel and button cap prototype](./images/20220926_button_panel.jpg) 
 
 ## 25. Sep 2022
 I am designing the right main button panel of the thrust lever at the moment. I plan to put there 6 buttons and a HAT.
-The HAT module gave me a pretty hard time. First I wanted to use the new bkue button but I didn't get the mechanics to work.
+The HAT module gave me a pretty hard time. First I wanted to use the new blue button but I didn't get the mechanics to work.
 So I went back to the first micro switches and with that I got a promising prototype.
 
 ![Right panel parts prototypes](./images/20220925_panel_part_prototype.jpg)
 
-The next step will be to integrate the HAT module into the panel contruction.
+The next step will be to integrate the HAT module into the panel construction.
 
 
 ## 20. Aug 2022
-I designes the right part of the lever where many of the buttons and the HAT will be located. The print went pretty well.
+I designed the right part of the lever where many of the buttons and the HAT will be located. The print went pretty well.
 
 ![Left part of the lever](./images/20220820_right_part.png)
 
-I am also struggeling designing the button modules. The problem is that the swithes I wanted to use arent pretty compact. So I ordered some others at EBAY hoping that they are as reliable as the old ones.
+I am also struggling designing the button modules. The problem is that the switches I wanted to use aren't pretty compact. So I ordered some others at EBAY hoping that they are as reliable as the old ones.
 
 ![Switches](./images/20220820_switches.png)
 
@@ -181,24 +192,24 @@ I designed and printed additional parts for test reasons.
 
 The consists of:
 - Two stoppers to set horizontal angle
-- Connector and connection plate to connect the lever with the joint with possible rotation around a additional axe
-- Partial printed lever hull, which constists of two parts but I put them too close while printing this time
-- Stopper to adjust rotation angle of the lever around its inner axe, not completely assembled
+- Connector and connection plate to connect the lever with the joint with possible rotation around a additional axis
+- Partial printed lever hull, which consists of two parts but I put them too close while printing this time
+- Stopper to adjust rotation angle of the lever around its inner axis, not completely assembled
 
 The result is promising but I also identified some weak points.
 
-![New parts assemlbed](./images/20220811_Parts_assembled.jpg)
+![New parts assembled](./images/20220811_Parts_assembled.jpg)
 
-There is also room for some optimizations like the ammount of needed material.
+There is also room for some optimizations like the amount of needed material.
 
 ## 07. Aug 2022
-I did a second prototype for a part of the joint that will connect lever and baseplate. With the screw the joint can be fixed in its position. The print wan't 100% accurate but luckily it was at a non-critival point.
+I did a second prototype for a part of the joint that will connect lever and base plate. With the screw the joint can be fixed in its position. The print wasn't 100% accurate but luckily it was at a non-critical point.
 
-![2nd prototype basejoint](./images/20220807_basejoint.jpg)
-![2nd prototype basejoint on baseplate](./images/20220807_basejoint2.jpg)
+![2nd prototype base joint](./images/20220807_basejoint.jpg)
+![2nd prototype base joint on baseplate](./images/20220807_basejoint2.jpg)
 
 ## 06. Jun 2022
-I redesigned the base plate to reduce need of filament. Additionally I replaced the original lock-in position by a kind of gear to allow finer angles of adjustment around the vertical axe.
+I redesigned the base plate to reduce need of filament. Additionally I replaced the original lock-in position by a kind of gear to allow finer angles of adjustment around the vertical axis.
 I also do a test print ob the counterpart for it.
 
 ![2nd prototype of base plate](./images/20220606_baseplate_2nd_prototype.jpg)  
@@ -209,7 +220,7 @@ Printed the first version of the base plate with joint. We will see if the joint
 ![Base plate](./images/baseplate.jpg)
 
 ## 06. Feb 2022
-Replaced the original metal base plate by a thin printed prototype to check if the holes where at the right position. On the base plate there will a joint to connect it with the leverl.
+Replaced the original metal base plate by a thin printed prototype to check if the holes where at the right position. On the base plate there will a joint to connect it with the lever.
 
 ![Base plate prototype](./images/baseplate-prototype.jpg)
 
