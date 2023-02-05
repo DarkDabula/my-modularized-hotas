@@ -1,6 +1,16 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 05. Feb 2023
+Still playing a lot Elite Dangerous with the current HOTAS design and yes, the blue push buttons are crap. The most stressed button have to be replaced regularly and I am going to run low on replacements.
+
+So I ordered an used Cherry keyboard and desolded the switches. The I designed an printed some prototypes as mount and key cap.
+
+![Cherry MX switches with mount prototypes](./images/20230205_cherry_switches.jpg)
+
+The next steps will be to redesign the lever and some other parts around the new switches.
+ 
+
 ## 23. Dec 2022
 I printed a cable mount so there will be no mechanical force on the Arduino board anymore.
 
