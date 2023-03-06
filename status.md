@@ -1,6 +1,27 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 06. Mar 2023
+Yesterday I completed and assembled the lever body. Now there will be Cherry switches for the rocker and the two main buttons. The new body is mostly compatible with the other legacy parts.
+
+![Parts for lever body V2](./images/20230304_lever_v2_body_parts.jpg)
+![Parts for lever body V2 assembled](./images/20230304_lever_v2_body_partly_assembled.jpg)
+![Parts for lever body V2 assembled](./images/20230304_lever_v2_body_partly_assembled_2.jpg)
+![Lever body V2 assembled](./images/20230304_lever_v2_body_assembled.jpg)
+
+To connect the cherry keys I use thinner wires and female sockets as connector which fits into the original board connectors.
+
+![Wired Cherry switches](./images/20230305_wired_cherry_switch.jpg)
+![Parts for lever body V2](./images/20230305_connected_cherry_switch.jpg)
+
+The next steps will be (maybe not in this order):
+
+- Redesign of the lever joint
+- Redesign of the HAT-button-panel
+- Replacing the inner Arduino and connector board by an I2C GPIO expander
+
+I played already several hours with the new lever and so far all in fine. The Cherry switches are softer and need less pressure. Hopefully the (used) Cherry switches will be more durable.
+
 ## 05. Feb 2023
 Still playing a lot Elite Dangerous with the current HOTAS design and yes, the blue push buttons are crap. The most stressed button have to be replaced regularly and I am going to run low on replacements.
 
