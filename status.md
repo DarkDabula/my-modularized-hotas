@@ -2,7 +2,7 @@
 This file will be a kind of diary for the projects, to document the progress
 
 ## 06. Mar 2023
-Yesterday I completed and assembled the lever body. Now there will be Cherry switches for the rocker and the two main buttons. The new body is mostly compatible with the other legacy parts.
+Yesterday I completed and assembled the new redesigned lever body. Now there will be Cherry switches for the rocker and the two main buttons. The new body is mostly compatible with the other legacy parts.
 
 ![Parts for lever body V2](./images/20230304_lever_v2_body_parts.jpg)
 ![Parts for lever body V2 assembled](./images/20230304_lever_v2_body_partly_assembled.jpg)
