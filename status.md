@@ -1,6 +1,23 @@
 # Status
 This file will be a kind of diary for the projects, to document the progress
 
+## 23. Apr 2023
+I finished another major step, I replaced the lever head with the new version with Cherry MX switches. I am looking forward to play with them. I am not happy with the slight wiring chaos within the lever, I will try to fix it with one of the nest stages.
+
+![New hull and secondary mount](./images/IMG_20230422_Hull_and_2nd_mount.jpg)
+![Hull and secondary mount assembled](./images/IMG_20230422_half_assembled.jpg)
+![HAT switches wired](./images/IMG_20230423_wired_hat_switches.jpg)
+![Wired switches and attached caps](./images/IMG_20230423_wired_buttons_with_caps.jpg)
+![Wiring from below](./images/IMG_20230423_wiring.jpg)
+![Attached cover plate](./images/IMG_20230423_attached_plate.jpg)
+![Fully assembled lever head](./images/IMG_20230423_assembled_head.jpg)
+![New head attached to lever](./images/IMG_20230423_atteched_to_lever.jpg)
+
+The next steps will be
+* Replacing the weak mount to the base
+* Replacing the inner Arduino and complex resistor board board by an I2C GPIO expander
+* Improving wire management
+
 ## 06. Mar 2023
 Yesterday I completed and assembled the new redesigned lever body. Now there will be Cherry switches for the rocker and the two main buttons. The new body is mostly compatible with the other legacy parts.
 
