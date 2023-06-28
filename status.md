@@ -1,5 +1,11 @@
 # Status
-This file will be a kind of diary for the projects, to document the progress
+This file will be a kind of diary for the project, to document the progress
+
+## 28. Jun 2023
+Designed and printed a new base plate for the upcoming new lever joint.
+I tried to improve stability while reducing the needed material. I also increased the size of the tunnel within the vertical joint for better cable handling.
+
+![New base plate](./images/20230628_BasePlateV2.jpg)
 
 ## 23. Apr 2023
 I finished another major step, I replaced the lever head with the new version with Cherry MX switches. I am looking forward to play with them. I am not happy with the slight wiring chaos within the lever, I will try to fix it with one of the nest stages.
