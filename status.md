@@ -1,6 +1,16 @@
 # Status
 This file will be a kind of diary for the project, to document the progress
 
+## 1. Aug 2023
+After the current lever joint got weaker and weaker I was forced to continue the project and beind able to play Elite Dangerous ^^ I printed the tow new joint parts for the new base plate. While assembling the new parts I recognized the whole cable management within the lever body is a mess. To it will be on my list when I replace the 2nd Arduino with a GPIO expander.
+
+![New base plate](./images/20230702_joint_v2.jpg)
+![New base plate](./images/20230725_joint_part.jpg)
+![New base plate](./images/20230725_lever_joint.jpg)
+![New base plate](./images/20230725_lever_joint_2.jpg)
+
+The screws are still too long, I will replace or shorten them. The advantage is that cou can adjust the vertical angle steplessly. The joint is pretty robust so far even in stressful situations like space comat.
+
 ## 28. Jun 2023
 Designed and printed a new base plate for the upcoming new lever joint.
 I tried to improve stability while reducing the needed material. I also increased the size of the tunnel within the vertical joint for better cable handling.
